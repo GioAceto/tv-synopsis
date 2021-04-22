@@ -6,4 +6,9 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Document
   body
-      h1(href='/showdata')= showdata.title
+      h1= showdata.title
+      h2 Developed By
+      for data in showdata.developedBy
+        li= data
+      
+
