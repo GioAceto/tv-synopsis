@@ -13,3 +13,7 @@ html(lang="en")
       h2 Starring
       for data in showdata.starring
         li= data
+      h2 Seasons
+      for data in showdata.seasons
+        li
+          a(href='#')= 'Season' + ' ' + data.number
