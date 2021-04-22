@@ -1,5 +1,5 @@
 const express = require('express')
-const scores = require('./showdata')
+const showdata = require('./showdata')
 
 const app = express()
 
