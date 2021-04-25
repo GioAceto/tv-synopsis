@@ -7,17 +7,17 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Document
   body
-    h1 Title
-    h2 Season Number
-    table
+    h1(id= "show-title")= title
+    h2(id= "season-number")= 'Season' + season.number
+    table(id= 'show-table')
         tr
           th No.
           th Title
           th Director
-          //- for episode in season.episodes
-          //-   tr
-          //-     td= episode.number
-          //-     td= episode.title
-          //-     td= episode.director
-          //-     tr
-          //-       td(colspan='3')= episode.synopsis
+          for episode in season.episodes
+            tr
+              td= episode.number
+              td= episode.title
+              td= episode.director
+              tr
+                td(colspan='3')= episode.synopsis
