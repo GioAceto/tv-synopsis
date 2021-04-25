@@ -11,20 +11,12 @@ app.get('/', (request, response) => {
   response.render('index', { showdata })
 })
 
-app.get('/season/1', (request, response) => {
-  response.render('seasons', { showdata })
-})
+app.get('/season/:number', (req, res) => {
+  const foundSeason = showdata.seasons.find((season) => {
+    return season.number === parseInt(req.params.number)
+  })
 
-app.get('/season/2', (request, response) => {
-  response.render('seasons', { showdata })
-})
-
-app.get('/season/3', (request, response) => {
-  response.render('seasons', { showdata })
-})
-
-app.get('/season/4', (request, response) => {
-  response.render('seasons', { showdata })
+  return res.render('seasons', { season: foundSeason, 'title': showdata.title })
 })
 
 app.all('*'), (request, response) => {
