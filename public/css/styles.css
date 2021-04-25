@@ -3,9 +3,14 @@
   padding: 0;
 }
 
-#show-title {
-  margin-bottom: 1rem;
+.show-title {
+  margin: 0 0 1rem 0.5rem;
 }
+
+.sub-header {
+  margin: 1rem 0 1rem 2rem;
+}
+
 
 #season-number {
   text-align: center;
@@ -14,6 +19,19 @@
 
 li {
   font-size: 1rem;
+  margin-left: 3rem;
+}
+
+.seasons-list {
+  margin-left: 1rem;
+}
+
+.seasons-list:first-child {
+  margin-top: 1rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 table {
