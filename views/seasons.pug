@@ -11,13 +11,13 @@ html(lang="en")
     h2(id= "season-number")= 'Season ' + season.number
     table(id= 'show-table')
         tr
-          th No.
-          th Title
-          th Director
+          th(class= "table-header") No.
+          th(class= "table-header") Title
+          th(class= "table-header") Director
           for episode in season.episodes
             tr
-              td= episode.number
-              td= episode.title
-              td= episode.director
+              td(id= "season-number")= episode.number
+              td(class= "info")= episode.title
+              td(class= "info")= episode.director
               tr
                 td(colspan='3')= episode.synopsis

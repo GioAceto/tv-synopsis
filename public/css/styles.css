@@ -4,7 +4,7 @@
 }
 
 .show-title {
-  margin: 0 0 1rem 0.5rem;
+  margin: 0.5rem 0 1rem 0.5rem;
 }
 
 .sub-header {
@@ -36,5 +36,25 @@ a {
 
 table {
   width: 80%;
-  margin: auto;
+  margin: 0 auto 2rem auto;
+  border-collapse: collapse;
+  letter-spacing: 0.03rem;
+}
+
+.table-header {
+  color: white;
+  background-color: #5AA1DB;
+}
+
+th, td {
+  padding: 0.3rem;
+  border: 2px solid black;
+}
+
+#season-number {
+  text-align: center;
+}
+
+.info {
+  padding-left: 1rem;
 }
