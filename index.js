@@ -12,19 +12,19 @@ app.get('/', (request, response) => {
 })
 
 app.get('/season1', (request, response) => {
-  response.render('showdata', { showdata })
+  response.render('seasons', { showdata })
 })
 
 app.get('/season2', (request, response) => {
-  response.render('showdata', { showdata })
+  response.render('seasons', { showdata })
 })
 
 app.get('/season3', (request, response) => {
-  response.render('showdata', { showdata })
+  response.render('seasons', { showdata })
 })
 
 app.get('/season4', (request, response) => {
-  response.render('showdata', { showdata })
+  response.render('seasons', { showdata })
 })
 
 app.all('*'), (request, response) => {
