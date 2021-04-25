@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 html(lang="en")
   head
+    link(rel='stylesheet' href='/css/styles.css')
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
@@ -13,10 +14,10 @@ html(lang="en")
           th No.
           th Title
           th Director
-          for episode in season.episodes
-            tr
-              td= episode.number
-              td= episode.title
-              td= episode.director
-              tr
-                td(colspan='3')= episode.synopsis
+          //- for episode in season.episodes
+          //-   tr
+          //-     td= episode.number
+          //-     td= episode.title
+          //-     td= episode.director
+          //-     tr
+          //-       td(colspan='3')= episode.synopsis
