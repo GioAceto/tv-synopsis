@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    link(rel='stylesheet' href='/css/styles.css')
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+  body
+    h1(class= "show-title")= title
+    h2(id= "season-number")= 'Season ' + season.number
+    table(id= 'show-table')
+        tr
+          th(class= "table-header") No.
+          th(class= "table-header") Title
+          th(class= "table-header") Director
+          for episode in season.episodes
+            tr
+              td(id= "season-number")= episode.number
+              td(class= "info")= episode.title
+              td(class= "info")= episode.director
+              tr
+                td(colspan='3')= episode.synopsis

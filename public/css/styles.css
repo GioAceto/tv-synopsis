@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.show-title {
+  margin: 0.5rem 0 1rem 0.5rem;
+}
+
+.sub-header {
+  margin: 1rem 0 1rem 2rem;
+}
+
+
+#season-number {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+li {
+  font-size: 1rem;
+  margin-left: 3rem;
+}
+
+.seasons-list {
+  margin-left: 1rem;
+}
+
+.seasons-list:first-child {
+  margin-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto 2rem auto;
+  border-collapse: collapse;
+  letter-spacing: 0.03rem;
+}
+
+.table-header {
+  color: white;
+  background-color: #5AA1DB;
+}
+
+th, td {
+  padding: 0.3rem;
+  border: 2px solid black;
+}
+
+#season-number {
+  text-align: center;
+}
+
+.info {
+  padding-left: 1rem;
+}
